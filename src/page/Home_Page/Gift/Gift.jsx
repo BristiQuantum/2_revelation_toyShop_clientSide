@@ -3,7 +3,7 @@ import img from '../../../assets/f.webp'
 
 const Gift = () => {
     return (
-        <div className="set-p xl:bg-[#EDE4D5] pb-32  my-9">
+        <div className="set-p pt-16 sm:pt-24  xl:bg-[#EDE4D5] pb-16 sm:pb-32 mb-0 sm:mb-9 ">
            
 
 

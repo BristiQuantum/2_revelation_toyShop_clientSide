@@ -2,7 +2,7 @@
 import img from '../../assets/galary/15.jpg'
 const What_We_do = () => {
     return (
-        <div className='set-p py-0 pb-0'>
+        <div className='set-p py-0 '>
             <div className="sm:flex items-center max-w-screen-xl">
                 <div className="sm:w-1/2 p-10">
                     <div className="image object-center text-center">

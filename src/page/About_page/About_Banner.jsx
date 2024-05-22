@@ -4,7 +4,7 @@ import img3 from '../../assets/galary/14.png'
 
 const About_Banner = () => {
     return (
-        <div className="set-p ">
+        <div className="pt-10 pb-0">
 
             <div className="flex pt-12 px-6 md:px-20  items-center justify-center bg-hero md:h-screen overflow-hidden">
                 <div className="flex flex-col  gap-6 md:flex-row items-center max-w-8xl">

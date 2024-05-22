@@ -4,8 +4,8 @@ import Blog_Post from './Blog_Post';
 
 const Blog_Page = () => {
     return (
-        <div className="flex">
-            <div className="md:basis-[75%] px-14 pt-24">
+        <div className="flex set-p pt-0">
+            <div className="md:basis-[75%] md:px-14 pt-24">
                 <div className="text-center mb-16 md:w-[80%] mx-auto">
                     <Title
                         title='Checks Out Latest Blog Post'

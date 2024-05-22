@@ -67,9 +67,9 @@ const Shop = () => {
     };
 
     return (
-        <div className="w-full set-p">
+        <div className="w-full set-p pb-0">
             <div className="w-full mx-auto">
-                <div className="flex w-1/2 mx-auto border-2 border-[#48322C] bg-[#A7A6A6] rounded-xl">
+                <div className="flex sm:w-1/2 mx-auto border-2 border-[#48322C] bg-[#A7A6A6] rounded-xl">
                     <button
                         className={`w-1/3 py-4 text-center text-[#ea5f8a] font-extrabold rounded-tl-lg focus:outline-none ${activeTab === 'tab1' && 'active-tab'}`}
                         onClick={(e) => openTab(e, 'tab1', setActiveTab)}>Moana</button>

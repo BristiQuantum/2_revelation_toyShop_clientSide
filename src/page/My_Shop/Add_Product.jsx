@@ -49,7 +49,7 @@ const Add_Product = () => {
         <div className="set-p">
 
             <div className="set-p pb-0">
-                <main className="mx-auto flex min-h-screen w-full items-center justify-center bg-[#48322C] text-white rounded-3xl">
+                <main className="mx-auto flex py-10 sm:py-0 sm:min-h-screen w-full items-center justify-center bg-[#48322C] text-white rounded-3xl">
                     <form onSubmit={handleUpdate} className="flex mx-3 sm:mx-0 w-[30rem] flex-col space-y-5">
                         <div className="text-center text-2xl sm:text-4xl font-medium text-[#ea5f8a] mb-7">Addd your product info here</div>
 

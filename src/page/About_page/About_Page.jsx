@@ -5,7 +5,7 @@ import What_We_do from "./What_We_do";
 
 const About_Page = () => {
     return (
-        <div>
+        <div className="pt-0">
             <About_Banner></About_Banner>
             <What_We_do></What_We_do>
             <Team></Team>

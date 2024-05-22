@@ -33,7 +33,7 @@
         @apply text-white font-semibold text-xl sm:text-2xl
     }
     .set-p {
-        @apply py-24 px-4 sm:px-16 pb-0
+        @apply py-24 px-2 sm:px-16 pb-0
     }
     /* title 
     ...................... */

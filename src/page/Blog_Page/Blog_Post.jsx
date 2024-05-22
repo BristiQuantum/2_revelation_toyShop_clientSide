@@ -11,7 +11,7 @@ const Blog_Post = () => {
                         <p className='text-[9px]'>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
-                <div className="text-black text-xs p-5 space-y-5">
+                <div className="text-black text-xs p-5 px-1 space-y-5">
                     <div className="">
                         <h2 className='text-2xl text-[#48322C] font-bold mb-2'>Lorem ipsum dolor sit amet.</h2>
                         <p className="mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores eos quo fugiat accusamus ipsa.lorem20 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolores ut eius. Praesentium eveniet voluptate expedita assumenda? Animi, vero! Repellat?</p>

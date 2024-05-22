@@ -14,7 +14,7 @@ import img12 from '../../../assets/galary/14.webp'
 
 const New = () => {
     return (
-        <div className="set-p">
+        <div className="set-p pt-0">
             <div className="text-center">
                 <Title
                     title='Doll Gallery !'

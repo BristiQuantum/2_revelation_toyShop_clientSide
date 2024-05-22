@@ -4,7 +4,7 @@ import img from '../../assets/galary/6.webp'
 
 const Team = () => {
     return (
-        <div className="set-p pb-0">
+        <div className="set-p pb-0 pt-0">
             <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl py-12">
                 <div className="text-center">
                     <Title

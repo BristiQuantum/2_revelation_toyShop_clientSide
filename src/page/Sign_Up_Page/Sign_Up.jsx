@@ -5,7 +5,7 @@ import { AuthContext } from '../../firebase/AuthProvider';
 import Swal from 'sweetalert2';
 
 const Sign_Up = () => {
-    const { signUP, getName } = useContext(AuthContext);
+    const { signUP, getName, googleLogin } = useContext(AuthContext);
     const navigate = useNavigate();
 
     // navigate to home
@@ -54,7 +54,30 @@ const Sign_Up = () => {
 
             });
 
+    }
 
+    const loginGoogle = () => {
+        googleLogin()
+            .then((result) => {
+                const user = result.user;
+
+                if (user) {
+                    Swal.fire({
+                        position: "center",
+                        icon: "success",
+                        title: "logged in successfully !",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+
+                navigate("/")
+
+            }).catch((error) => {
+                // Handle Errors here.
+                console.log(error.message);
+                // ...
+            });
     }
     return (
         <div className="set-p md:pt-40 pb-0">
@@ -68,8 +91,8 @@ const Sign_Up = () => {
                             </h2>
                             <div className="w-full flex-1 mt-8">
                                 <div className="flex flex-col items-center">
-                                    <button
-                                        className="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-[#EA93A3] text-[#48322C] flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline text-xs sm:text-base">
+                                    <button onClick={loginGoogle}
+                                        className="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-[#EA93A3] text-[#48322C] flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline text-xs sm:text-base" >
                                         <div className="bg-white p-2 rounded-full">
                                             <svg className="w-4" viewBox="0 0 533.5 544.3">
                                                 <path
@@ -115,13 +138,13 @@ const Sign_Up = () => {
                                 <form onSubmit={handleSignup} className="mx-auto max-w-xs">
                                     <input
                                         className="w-full mb-5 px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
-                                        type="text" name='name' placeholder="Name" autoComplete="off" required/>
+                                        type="text" name='name' placeholder="Name" autoComplete="off" required />
                                     <input
                                         className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
-                                        type="email" name='email' placeholder="Email" autoComplete="off" required/>
+                                        type="email" name='email' placeholder="Email" autoComplete="off" required />
                                     <input
                                         className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
-                                        type="password" name='password' placeholder="Password" autoComplete="off" required/>
+                                        type="password" name='password' placeholder="Password" autoComplete="off" required />
                                     <button
                                         className="mt-5 tracking-wide font-semibold bg-[#48322C] text-[#EA93A3]  w-full py-4 rounded-lg hover:bg-[#826760] transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none border-2 border-[#826760] hover:text-white">
                                         <svg className="w-6 h-6 -ml-2" fill="none" stroke="currentColor" strokeWidth="2"

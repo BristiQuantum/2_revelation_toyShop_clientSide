@@ -54,25 +54,25 @@ const Update_Product = () => {
 
 
     return (
-        <div className="set-p">
-            <div className="set-p pb-0">
-                <main className="mx-auto flex min-h-screen w-full items-center justify-center bg-[#48322C] text-white rounded-3xl">
+        <div className="set-p pt-20">
+            <div className="">
+                <main className="mx-auto flex py-16 sm:py-0 sm:min-h-screen w-full items-center justify-center bg-[#48322C] text-white rounded-3xl">
                     <section className="space-y-5">
                         <div className="text-center w-full text-2xl sm:text-4xl font-medium text-[#ea5f8a] mb-12">Update <span className="text-yellow-500">{Name}</span> information:</div>
 
-                        <form className="flex mx-3 sm:mx-0 w-[30rem] flex-col space-y-5" onSubmit={handleUpdate}>
+                        <form className="flex mx-3 sm:mx-0 sm:w-[30rem] flex-col space-y-5" onSubmit={handleUpdate}>
                             <div className="w-full transform bg-transparent text-lg duration-300 focus-within:border-[#ea5f8a]">
-                                <input type="text" name="name" defaultValue={Name} className="w-full border-2 p-4 rounded-lg bg-transparent outline-none placeholder:italic focus:outline-none" />
+                                <input type="text" name="name" defaultValue={Name} className="w-full border-2 p-4 rounded-lg bg-transparent outline-none placeholder:italic focus:outline-none box-border" />
                             </div>
 
                             <div className="w-full transform bg-transparent text-lg duration-300 focus-within:border-[#ea5f8a]">
-                                <input type="text" name="price" defaultValue={Price} className="w-full border-2 p-4 rounded-lg bg-transparent outline-none placeholder:italic focus:outline-none" />
+                                <input type="text" name="price" defaultValue={Price} className="w-full border-2 p-4 rounded-lg bg-transparent outline-none placeholder:italic focus:outline-none box-border" />
                             </div>
                             <div className="w-full transform bg-transparent text-lg duration-300 focus-within:border-[#ea5f8a]">
-                                <input type="text" name="catagory" defaultValue={Catagory} className="w-full border-2 p-4 rounded-lg bg-transparent outline-none placeholder:italic focus:outline-none" />
+                                <input type="text" name="catagory" defaultValue={Catagory} className="w-full border-2 p-4 rounded-lg bg-transparent outline-none placeholder:italic focus:outline-none box-border" />
                             </div>
                             <div className="w-full transform bg-transparent text-lg duration-300 focus-within:border-[#ea5f8a]">
-                                <input type="text" name="photo" defaultValue={Photo_url} className="w-full border-2 p-4 rounded-lg bg-transparent outline-none placeholder:italic focus:outline-none" />
+                                <input type="text" name="photo" defaultValue={Photo_url} className="w-full border-2 p-4 rounded-lg bg-transparent outline-none placeholder:italic focus:outline-none box-border" />
                             </div>
 
                             <input className="transform rounded-lg bg-[#ea5f8a] py-4  font-bold text-[#48322C] cursor-pointer transition-all ease-in-out hover:bg-[#b42a56] hover:text-white duration-300" type="submit" value="Update" />
