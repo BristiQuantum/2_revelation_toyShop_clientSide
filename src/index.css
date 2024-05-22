@@ -69,7 +69,7 @@
     /* home section 
     ........................... */
     .home {
-        @apply bg-[url('./src/assets/home/t.png')] bg-no-repeat bg-cover h-screen pt-14 pb-5 md:pt-20  w-full flex  justify-center sm:justify-end md:justify-center items-center px-4
+        @apply  bg-no-repeat bg-cover h-screen pt-14 pb-5 md:pt-20  w-full flex  justify-center sm:justify-end md:justify-center items-center px-4
     }
     h1{
         @apply text-3xl sm:text-5xl text-gray-100 md:text-6xl font-bold drop-shadow-[2px_4px_1px_red]
