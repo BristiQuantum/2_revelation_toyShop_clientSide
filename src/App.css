@@ -1,0 +1,6 @@
+
+/* Add this CSS to your stylesheet */
+.active-tab {
+    background-color: #48322C !important; /* Change to your desired active tab color */
+    color: white !important;
+}
