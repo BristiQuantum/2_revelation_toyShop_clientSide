@@ -6,7 +6,7 @@ const Single_Toy = () => {
     const loadData = useLoaderData();
     const { Name, Price, Photo_url} = loadData;
 
-    console.log(loadData);
+    // console.log(loadData);
     return (
         <div className="set-p pt-32">
             <div className="bg-[#EA91AD] dark:bg-gray-800 py-8 rounded-2xl">

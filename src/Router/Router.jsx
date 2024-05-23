@@ -12,6 +12,7 @@ import My_Shop from "../page/My_Shop/My_Shop";
 import Add_Product from "../page/My_Shop/Add_Product";
 import Update_Product from "../page/My_Shop/Update_Product";
 import Private_Route from "./Private_Route";
+import img from '../assets/404.jpg'
 
 export const router = createBrowserRouter([
   {
@@ -76,6 +77,11 @@ export const router = createBrowserRouter([
       //     return response.json();
       //   },
       // },
+
+      {
+        path: '*',
+        element: <div><img src={img} alt="" /></div>
+      },
     ]
   },
 

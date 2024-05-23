@@ -10,7 +10,7 @@ const All_Toy = () => {
     const loadData = useLoaderData();
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 6;
-console.log(loadData)
+// console.log(loadData)
     // Calculate the total number of pages
     const totalPages = Math.ceil(loadData.length / itemsPerPage);
 

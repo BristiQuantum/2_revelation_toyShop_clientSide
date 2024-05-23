@@ -31,7 +31,7 @@ const My_Shop_Card = ({ data, SetProduct, product }) => {
                 })
                     .then(response => response.json())
                     .then(data => {
-                        console.log(data)
+                        // console.log(data)
                         if (data.deletedCount > 0) {
                             Swal.fire({
                                 title: "Deleted!",

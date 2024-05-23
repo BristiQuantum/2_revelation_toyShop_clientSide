@@ -21,7 +21,7 @@ const Add_Product = () => {
             Photo_url: url,
             Email: email,
         }
-        console.log(info);
+        // console.log(info);
 
         // mongoDb operation 
         fetch('https://two-revelation-toyshop-serverside.onrender.com/products', {
@@ -33,7 +33,7 @@ const Add_Product = () => {
         })
             .then(response => response.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 if (data.insertedId) {
                     Swal.fire({
                         title: 'success!',

@@ -31,7 +31,7 @@ const Sign_Up = () => {
         signUP(email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                console.log(user);
+                // console.log(user);
 
                 if (user) {
                     Swal.fire({
